@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Frontend Mentor | Manage landing page</title>
+	</head>
+	<body>
+		<header class="page-header">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="#" aria-label="home" class="align-self-end">
+						<svg class="logo">
+							<use xlink:href="./images/logos.svg#logo"></use>
+						</svg>
+						<span class="visually-hidden">home</span>
+					</a>
+
+					<div class="nav-bg">
+						<nav
+							class="primary-navigation"
+							id="primary-navigation"
+							aria-label="primary-navigation"
+						>
+							<ul class="nav-list" role="list">
+								<li class="nav-item"><a href="#">Pricing</a></li>
+								<li class="nav-item"><a href="#">Product</a></li>
+								<li class="nav-item"><a href="#">About Us</a></li>
+								<li class="nav-item"><a href="#">Careers</a></li>
+								<li class="nav-item"><a href="#">Community</a></li>
+							</ul>
+						</nav>
+					</div>
+					<button
+						class="mobile-nav-toggle"
+						aria-controls="primary-navigation"
+						aria-expanded="false"
+					>
+						<img
+							class="icon-open"
+							src="images/icon-hamburger.svg"
+							alt=""
+							aria-hidden="true"
+						/>
+						<img
+							class="icon-close"
+							src="images/icon-close.svg"
+							alt=""
+							aria-hidden="true"
+						/>
+						<span class="visually-hidden">Menu</span>
+					</button>
+					<button class="button display-lg-block display-sm-hidden">
+						Get Started
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero padding-block-800">
+				<div class="container">
+					<div class="even-column">
+						<div
+							class="order-sm-two order-md-one flow text-align-sm-center text-align-lg-left"
+							style="--flow-spacer: 3rem"
+						>
+							<h1 class="primary-heading font-weight-bold">
+								Bring everyone together to build better products.
+							</h1>
+							<p class="short-p">
+								Manage makes it simple for software teams to plan day-to-day
+								tasks while keeping the larger team goals in view.
+							</p>
+							<button class="button">Get Started</button>
+						</div>
+
+						<div class="order-sm-one order-md-two">
+							<img src="images/illustration-intro.svg" alt="introduction" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="padding-block-800 adventages">
+				<div class="container">
+					<div class="even-column">
+						<div class="flow text-align-sm-center">
+							<h2 class="secondary-heading font-weight-bold">
+								What's different about Manage?
+							</h2>
+							<p class="short-p">
+								Manage provides all the functionality your team needs, without
+								the complexity. Our software is tailor-made for modern digital
+								product teams.
+							</p>
+						</div>
+						<div>
+							<ul role="list" class="flow">
+								<li>
+									<h3>Track company-wide progress</h3>
+									<p>
+										See how your day-to-day tasks fit into the wider vision. Go
+										from tracking progress at the milestone level all the way
+										done to the smallest of details. Never lose sight of the
+										bigger picture again.
+									</p>
+								</li>
+								<li>
+									<h3>Advanced built-in reports</h3>
+									<p>
+										Set internal delivery estimates and track progress toward
+										company goals. Our customisable dashboard helps you build
+										out the reports you need to keep key stakeholders informed.
+									</p>
+								</li>
+								<li>
+									<h3>Everything you need in one place</h3>
+									<p>
+										Stop jumping from one service to another to communicate,
+										store files, track tasks and share documents. Manage offers
+										an all-in-one team productivity solution.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- testemonial -->
+			<section class="carousel padding-block-900 padding-block-m-1000">
+				<div class="container flow">
+					<h2 class="secondary-heading font-weight-bold">What they've said</h2>
+
+					<!-- Slider main container -->
+					<div class="swiper">
+						<!-- Additional required wrapper -->
+						<ul role="list" class="swiper-wrapper">
+							<!-- Slides -->
+							<li class="swiper-slide card">
+								<img
+									class="card-avatar"
+									src="images/avatar-anisha.png"
+									alt="Anisha Li"
+								/>
+								<div class="card-content flow">
+									<h3>Anisha Li</h3>
+									<p>
+										“Manage has supercharged our team's workflow. The ability to
+										maintain visibility on larger milestones at all times keeps
+										everyone motivated.”
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide card">
+								<img
+									class="card-avatar"
+									src="images/avatar-ali.png"
+									alt="Ali Bravo"
+								/>
+								<div class="card-content flow">
+									<h3>Ali Bravo</h3>
+									<p>
+										“We have been able to cancel so many other subscriptions
+										since using Manage. There is no more cross-channel confusion
+										and everyone is much more focused.”
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide card">
+								<img
+									class="card-avatar"
+									src="images/avatar-richard.png"
+									alt="Richard Watts"
+								/>
+								<div class="card-content flow">
+									<h3>Richard Watts</h3>
+									<p>
+										“Manage allows us to provide structure and process. It keeps
+										us organized and focused. I can't stop recommending them to
+										everyone I talk to!”
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide card">
+								<img
+									class="card-avatar"
+									src="images/avatar-shanai.png"
+									alt="Shanai Gough"
+								/>
+								<div class="card-content flow">
+									<h3>Shanai Gough</h3>
+									<p>
+										“Their software allows us to track, manage and collaborate
+										on our projects from anywhere. It keeps the whole team
+										in-sync without being intrusive.”
+									</p>
+								</div>
+							</li>
+						</ul>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+
+					<button class="button">Get Started</button>
+				</div>
+			</section>
+
+			<!-- cta  -->
+			<section class="cta padding-block-900 bg-color-accent">
+				<div class="container">
+					<div class="even-column text-align-sm-center justfy-item-sm-center">
+						<p
+							class="text-color-neutral-100 opacity-100 font-size-600 font-weight-bold"
+						>
+							Simplify how your team works today.
+						</p>
+						<button class="button button-inverted">Get Started</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer
+			class="page-footer padding-block-800 text-color-neutral-100 bg-color-dark"
+		>
+			<div class="container footer-wrapper">
+				<a href="#" aria-label="home">
+					<svg class="logo">
+						<use xlink:href="./images/logos.svg#logo"></use>
+					</svg>
+					<span class="visually-hidden">home</span>
+				</a>
+
+				<ul role="list" class="social-list" aria-label="social links">
+					<li>
+						<a href="#" aria-label="facebook">
+							<svg class="social-icon">
+								<use xlink:href="./images/social-icons.svg#icon-facebook"></use>
+							</svg>
+							<span class="visually-hidden">facebook</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="youtube">
+							<svg class="social-icon">
+								<use xlink:href="./images/social-icons.svg#icon-youtube"></use>
+							</svg>
+							<span class="visually-hidden">youtube</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="twitter">
+							<svg class="social-icon">
+								<use xlink:href="./images/social-icons.svg#icon-twitter"></use>
+							</svg>
+							<span class="visually-hidden">twitter</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="pinterest">
+							<svg class="social-icon">
+								<use
+									xlink:href="./images/social-icons.svg#icon-pinterest"
+								></use>
+							</svg>
+							<span class="visually-hidden">pinterest</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="instragram">
+							<svg class="social-icon">
+								<use
+									xlink:href="./images/social-icons.svg#icon-instagram"
+								></use>
+							</svg>
+							<span class="visually-hidden">instragram</span>
+						</a>
+					</li>
+				</ul>
+
+				<nav class="page-footer-nav">
+					<ul role="list" class="flow">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Community</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</nav>
+
+				<form action="">
+					<input
+						type="email"
+						aria-label="email"
+						placeholder="Updates in your inbox..."
+					/><button type="submit" class="button" data-shadow="none">GO</button>
+				</form>
+				<p class="copyright">Copyright 2020. All Rights Reserved</p>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="script.js"></script>
+		<script src="slider.js"></script>
+	</body>
+</html>
